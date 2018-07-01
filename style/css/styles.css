@@ -1096,6 +1096,13 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     font-weight: 700;
     margin-top: 30px;
 }
+.more:hover{
+    background-color: #254275;
+    transition: .3s;
+}
+.more:focus{
+    outline: none;
+}
 .slide-card{
     margin-bottom: 30px;
 }
@@ -1308,6 +1315,11 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     color: #ffffff;
     border: none;
     outline: none;
+    cursor: pointer;
+}
+.btn-submit:hover{
+    background-color: #175983;
+    transition: .3s;
 }
 .custom-control-label::before{
     width: 24px;
@@ -1342,6 +1354,10 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.footer-social li:hover{
+    background-color: #797057;
+    transition: .3s;
 }
 .footer-social li a{
     font-size: 25px;
