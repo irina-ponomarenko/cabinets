@@ -6,6 +6,7 @@ $(document).ready(function() {
 
     $('#btn-toggle-vertical-menu').on('click', function() {
         $('.left-nav-bar').toggleClass('hide');
+        $(this).toggleClass('align-right');
         $(this).find('.fa').toggleClass('fa-angle-right');
     });
 });

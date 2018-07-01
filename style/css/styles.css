@@ -84,6 +84,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 
 }
 .wrapper-content-header{
+    overflow: hidden;
     max-width: 1620px;
     width: 100%;
     margin: 0 auto;
@@ -317,9 +318,6 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     height: 60px;
     border-radius: 100%;
     background: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     border: none;
     outline: none;
     cursor: pointer;
@@ -333,6 +331,9 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 .chevron-left:focus,
 .chevron-right:focus{
     outline: none;
+}
+.chevron-left.align-right{
+    text-align: right;
 }
 .chevron-left i{
     font-size: 47px;
