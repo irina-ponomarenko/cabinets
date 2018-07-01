@@ -1,10 +1,11 @@
-$(document).ready(function () {
+$(document).ready(function() {
     $('.jcarousel').jcarouselSwipe({
         perSwipe: 3 // by default 1
     });
 
-    $('.nav-bar-left').drawer({
-        align: 'left',
-        top: '150px'
+
+    $('#btn-toggle-vertical-menu').on('click', function() {
+        $('.left-nav-bar').toggleClass('hide');
+        $(this).find('.fa').toggleClass('fa-angle-right');
     });
 });
