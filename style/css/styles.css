@@ -805,6 +805,9 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     top: 16px;
     right: 16px;
 }
+.hit{
+    background-image: url("../../images/hit.png");
+}
 .new-mark{
     background-image: url("../../images/new.png");
 }
@@ -1083,9 +1086,17 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     max-width: 1620px;
     margin: 0 auto;
     padding-top: 66px;
+    padding-left: 80px;
 
 }
 .header-footer h2{
     font-size: 33px;
     font-weight: 300;
+    position: relative;
+}
+.header-footer h2:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+
 }
