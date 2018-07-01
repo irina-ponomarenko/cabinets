@@ -1112,10 +1112,77 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     font-size: 33px;
     font-weight: 300;
     position: relative;
+    padding-bottom: 15px;
 }
 .header-footer h2:before{
     content: '';
     position: absolute;
     bottom: 0;
+    background-image: url("../../images/line.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 2px;
+}
+.content-footer{
+    max-width: 1620px;
+    margin: 0 auto;
+    padding: 0 44px 35px 80px;
+}
+.card-footer{
+    min-height: 0;
+    padding: 0;
+}
+.footer-carousel img{
+    margin-top: 0;
+}
+.info-footer{
+    border-bottom: 2px solid black;
+    padding-bottom: 56px;
+}
+.change-next{
+    right: -18px;
+}
+.footer-wrapper-carousel{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.content-list-footer{
 
+}
+.lists-footer{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.wrapper-list h2{
+    font-size: 21px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.wrapper-list ul li{
+    padding: 20px 0;
+}
+.logo-footer h2{
+    font-size: 43px;
+    font-weight: 500;
+    color: #404040;
+}
+.logo-footer span{
+    color: #ffffff;
+}
+.logo-footer span:first-child{
+    font-weight: 900;
+}
+.logo-footer p{
+    font-size: 22px;
+    font-weight: 500;
+}
+.footer-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0 10px 0;
+}
+.footer-bottom p{
+    font-size: 19px;
 }
