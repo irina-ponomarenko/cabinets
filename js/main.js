@@ -14,6 +14,8 @@ $(document).ready(function() {
         let item = $('#left-bar-content');
         let check = item.hasClass('hidden');
 
+        $(this).find('.fa').toggleClass('fa-angle-right');
+
         if (check) {
             item.removeClass('hidden');
             setTimeout(() => {
