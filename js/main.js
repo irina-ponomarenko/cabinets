@@ -9,4 +9,8 @@ $(document).ready(function() {
         $(this).toggleClass('align-right');
         $(this).find('.fa').toggleClass('fa-angle-right');
     });
+
+    $('#toggle-menu-vertical').on('click', function() {
+        $('#left-bar-content').toggleClass('hidden');
+    });
 });

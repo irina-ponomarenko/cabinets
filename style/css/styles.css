@@ -88,7 +88,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     max-width: 1620px;
     width: 100%;
     margin: 0 auto;
-    padding: 25px 44px 25px 0;
+    padding: 25px 44px;
 }
 .navigation-top{
     display: flex;
@@ -271,9 +271,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 /*-------------left-nav-bar----------------*/
 
 .left-nav-bar{
-    max-width: 362px;
-    width: 100%;
-    padding-left: 44px;
+    width: 362px;
     background-image: url("../../images/border-nav.png");
     background-repeat: no-repeat;
     min-height: 630px;
@@ -284,9 +282,10 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     transition: .4s;
 }
 .left-nav-bar.hide {
-    margin-left: -362px;
+    margin-left: -406px;
 }
 .nav-bar-left{
+    width: 300px;
     padding-right: 30px;
 }
 .nav-bar-left li{
@@ -524,10 +523,11 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     background-color: #ffffff;
 }
 .content-section{
+    display: flex;
     max-width: 1620px;
     width: 100%;
     margin: 0 auto;
-    padding: 44px 25px 44px 104px;
+    padding: 44px 25px 44px 0;
     background-color: #fbfbfb;
     position: relative;
     overflow: hidden;
@@ -548,6 +548,9 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     padding: 0;
     display: flex;
     align-items: flex-end;
+}
+.wrap-content-sliders{
+    padding-left: 50px;
 }
 .content-navigation ul{
     display: flex;
@@ -901,11 +904,24 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     transition: .3s;
 }
 .left-bar-content{
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
     background-color: #ffffff;
     background-image: none;
     -webkit-box-shadow: 0px 0px 33px 0px rgba(0,0,0,0.25);
     -moz-box-shadow: 0px 0px 33px 0px rgba(0,0,0,0.25);
     box-shadow: 0px 0px 33px 0px rgba(0,0,0,0.25);
+    transition: .4s;
+}
+.left-bar-content.hidden{
+    width: 0;
+}
+.left-bar-content .nav-bar-left{
+    width: 362px;
+    padding: 0;
 }
 
 .left-bar-content ul li{
@@ -935,14 +951,17 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     left: -72px;
     display: none;
 }
+.wrap-test{
+
+}
 .wrapper-nav-bar {
-    right: 0;
-    position: absolute;
-    top: 9.4%;
-    left: -364px;
+    /*right: 0;*/
+    /*position: absolute;*/
+    /*top: 9.4%;*/
+    /*left: -364px;*/
     display: flex;
-    max-width: 422px;
-    height: 80%;
+    /*max-width: 422px;*/
+    /*height: 80%;*/
 }
 .img-menu{
     position: absolute;
