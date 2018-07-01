@@ -274,8 +274,6 @@
                     <div class="img-menu">
                         <img src="images/menu-click.png" alt="menu"/>
                         <i class="fa fa-times" aria-hidden="true"></i>
-                    </div>
-                    <div class="circul-block">
                         <div class="circular-nav">
                             <h2>Стол и <span>стулья</span></h2>
                             <ul>
@@ -933,7 +931,8 @@
                                <span class="sr-only">Previous</span>
                            </a>
                            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                               <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                               <span class="carousel-control-next-icon icon-none" aria-hidden="true">
+                               </span>
                                <span class="sr-only">Next</span>
                            </a>
                        </div>
@@ -1164,22 +1163,44 @@
             <div class="banner-content-right footer-banner">
                 <h2>Подпишись и узнай первым про
                     акции и новости</h2>
-                <form>
-                    <input type="email" placeholder="Введите  e-mail"/>
-                    <button type="submit">Подписаться</button>
+                <form class="subscription">
+                    <input type="email" class="email" placeholder="Введите  e-mail"/>
+                    <button type="submit" class="btn-submit">Подписаться</button>
                 </form>
-                <div class="check-button">
-                    <input type="checkbox">
-                    <label>Нажимая на кнопку, вы даете согласие
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                    <label class="custom-control-label" for="customCheck1">Нажимая на кнопку, вы даете согласие
                         на обработку своих персональных
                         данных и соглашаетесь с политикой
                         конфиденциальности</label>
                 </div>
                 <h2>Присоединяйтесь к нам в соцсетях:</h2>
                 <div class="social-list">
-                    <ul>
+                    <ul class="footer-social">
                         <li>
-                            <a href=""></a>
+                            <a href="">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fa fa-vk" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                            </a>
                         </li>
                     </ul>
                 </div>

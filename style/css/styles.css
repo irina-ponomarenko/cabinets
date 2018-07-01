@@ -88,7 +88,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     max-width: 1620px;
     width: 100%;
     margin: 0 auto;
-    padding: 25px 44px;
+    padding: 25px 40px;
 }
 .navigation-top{
     display: flex;
@@ -352,6 +352,10 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 .content-header-center{
     width: 100%;
 }
+.content-header-center {
+    max-width: 1532px;
+    margin: 0 auto;
+}
 .menu-content-header ul{
     display: flex;
     justify-content: space-between;
@@ -530,7 +534,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     max-width: 1620px;
     width: 100%;
     margin: 0 auto;
-    padding: 0 25px 0 0;
+    padding: 0 40px 0 0;
     background-color: #fbfbfb;
     position: relative;
 }
@@ -954,7 +958,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     position: absolute;
     top: 50px;
     left: -72px;
-    display: none;
+    z-index: 100;
 }
 .wrap-test{
 
@@ -973,6 +977,9 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     top: 56px;
     left: 425px;
 }
+.img-menu img{
+    position: relative;
+}
 .img-menu i{
     position: absolute;
     right: 30px;
@@ -980,21 +987,29 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     font-size: 35px;
     cursor: pointer;
 }
-.circul-block{
-    width: 778px;
-    min-height: 782px;
-    background-color: #ffffff;
-    border-radius: 100%;
+.circular-nav{
+    max-width: 595px;
+    width: 100%;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.circular-nav ul{
+    left: 35px;
     position: absolute;
 }
 .circular-nav h2{
     font-size: 46px;
     font-weight: 500;
-    position: relative;
-    left: 110px;
+    position: absolute;
+    left: 19%;
+    top: 15%;
 }
 .circular-nav h2 span{
     color: #ffffff;
@@ -1076,10 +1091,10 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     font-weight: 700;
     margin-top: 30px;
 }
-.carousel-control-prev-icon{
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
     width: 30px;
     height: 30px;
-    background-image: none;
 }
 .carousel-control-prev-icon i{
     font-size: 40px;
@@ -1141,7 +1156,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 .content-footer{
     max-width: 1620px;
     margin: 0 auto;
-    padding: 0 44px 35px 80px;
+    padding: 0 40px 35px 80px;
 }
 .card-footer{
     min-height: 0;
@@ -1156,6 +1171,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     padding-bottom: 56px;
     display: flex;
     align-items: flex-start;
+    justify-content: space-between;
 }
 .change-next{
     right: -18px;
@@ -1211,6 +1227,13 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     box-shadow: 0px 2px 13px -1px rgba(153,134,117,1);
     padding: 65px 15px;
 }
+.footer-banner h2{
+    font-size: 22px;
+    font-weight: 700;
+     line-height: 30px;
+    text-transform: inherit;
+    margin-left: 20px;
+}
 .amazingcarousel-next{
     left: 50%;
     right: 0;
@@ -1255,4 +1278,62 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 }
 .vertical-slider{
     margin: 60px 0;
+}
+.email{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 15px 10px 15px 20px;
+    font-size: 14px;
+}
+.subscription{
+    background-color: #f5f5f4;
+    display: flex;
+}
+.btn-submit{
+    background-color: #4b98c9;
+    color: #ffffff;
+    border: none;
+    outline: none;
+}
+.custom-control-label::before{
+    width: 24px;
+    height: 24px;
+}
+.custom-control-label::after{
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+.custom-control{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.custom-control-label{
+    padding-left: 13px;
+    font-size: 14px;
+    line-height: 30px;
+    font-family: 'Museo Cyrl';
+    color: #ffffff;
+}
+.footer-social{
+    display: flex;
+    align-items: center;
+}
+.footer-social li{
+    margin-right: 5px;
+    background-color: #9d9275;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-social li a{
+    font-size: 25px;
+    color: #d3c8ac;
+}
+.social-list{
+    margin-top: 30px;
 }
