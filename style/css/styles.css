@@ -419,6 +419,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     top: auto;
     bottom: 80px;
     right: -35px;
+    background-color: transparent;
 }
 
 /*------------------carousel--------------*/
@@ -783,7 +784,6 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 .sale-mark{
     width: 43px;
     height: 48px;
-    background-image: url("../../images/hit.png");
     background-repeat: no-repeat;
     color: #ffffff;
     font-size: 14px;
@@ -800,7 +800,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     background-image: url("../../images/new.png");
 }
 .sale-mark{
-    background-image: url("../../images/new.png");
+    background-image: url("../../images/sale.png");
 }
 
 .percent{
@@ -1148,4 +1148,21 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 .drawer-content-top {
     top: 0;
     position: absolute;
+}
+
+/*-------------------------footer---------------------*/
+
+.footer{
+    background-color: #efdf86;
+    width: 100%;
+}
+.header-footer{
+    max-width: 1620px;
+    margin: 0 auto;
+    padding-top: 66px;
+    padding-left: ;
+}
+.header-footer h2{
+    font-size: 33px;
+    font-weight: 300;
 }
