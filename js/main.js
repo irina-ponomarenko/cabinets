@@ -11,6 +11,28 @@ $(document).ready(function() {
     });
 
     $('#toggle-menu-vertical').on('click', function() {
-        $('#left-bar-content').toggleClass('hidden');
+        let item = $('#left-bar-content');
+        let check = item.hasClass('hidden');
+
+        if (check) {
+            item.removeClass('hidden');
+            setTimeout(() => {
+                item.removeClass('overflow-hidden');
+            }, 300);
+        }
+        else {
+            item.addClass('hidden');
+            setTimeout(() => {
+                item.addClass('overflow-hidden');
+            }, 300);
+        }
+    });
+
+    $('.js-sub-menu').on('click', function() {
+        $('#sub-menu-block').addClass('open');
+    });
+
+    $('#sub-menu-close').on('click', function() {
+        $('#sub-menu-block').removeClass('open');
     });
 });
