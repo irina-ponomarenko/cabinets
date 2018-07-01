@@ -527,10 +527,9 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     max-width: 1620px;
     width: 100%;
     margin: 0 auto;
-    padding: 44px 25px 44px 0;
+    padding: 0 25px 0 0;
     background-color: #fbfbfb;
     position: relative;
-    overflow: hidden;
 }
 .new-padding{
     padding: 44px;
@@ -550,7 +549,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     align-items: flex-end;
 }
 .wrap-content-sliders{
-    padding-left: 50px;
+    padding: 44px 0 44px 50px;
 }
 .content-navigation ul{
     display: flex;
@@ -1000,10 +999,14 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 .circular-nav ul li{
     padding: 18px 0;
 }
-.click-block{
+.hidden-menu-block{
     width: 55px;
     background-color: #e8e8e8;
     position: relative;
+}
+.hidden-menu-block button {
+    position: sticky;
+    top: 50%;
 }
 .title-section{
     font-size: 33px;
