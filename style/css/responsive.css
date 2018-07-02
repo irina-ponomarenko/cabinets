@@ -1,0 +1,11 @@
+@media (max-width: 1170px) {
+    .wrapper-content-header{
+        padding: 15px 30px;
+    }
+    .banner-content{
+        max-height: 380px;
+    }
+    .content-navigation ul li a{
+        font-size: 25px;
+    }
+}

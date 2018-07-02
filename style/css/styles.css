@@ -158,7 +158,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     color: #333333;
 }
 .top-logo{
-    font-size: 39px;
+    font-size: 30px;
     font-weight: 500;
     display: flex;
     align-items: center;
@@ -167,7 +167,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     color: #4e6692;
 }
 .logo a h2{
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 700;
     margin-top: 5px;
 }
@@ -176,7 +176,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 
 .btn-search{
     border: none;
-    font-size: 25px;
+    font-size: 20px;
     color: #2e2e2e;
     padding-right: 0;
 }
@@ -191,7 +191,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     color: #2e2e2e;
     width: 93% !important;
     outline: none;
-    font-size: 20px;
+    font-size: 15px;
 }
 .input-search:focus,
 .input-search:hover{
@@ -223,16 +223,16 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     max-width: 198px;
 }
 .call-me span{
-    font-size: 19px;
+    font-size: 15px;
     font-weight: 500;
 }
 .call-me h3{
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 500;
     align-self: flex-start;
 }
 .call-number{
-    font-size: 33px;
+    font-size: 25px;
     color: #333333;
 }
 .call-number:hover{
@@ -242,21 +242,22 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 .basket{
     background-image: url("../../images/shopping.png");
     background-repeat: no-repeat;
-    width: 35px;
-    height: 35px;
+    width: 25px;
+    height: 25px;
     position: relative;
+    background-size: contain;
 }
 .label-shop{
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     background: #ef7860;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 100%;
     position: absolute;
-    right: -15px;
-    top: -12px;
+    right: -12px;
+    top: -7px;
 }
 .wrapper-shoping{
     display: flex;
@@ -264,7 +265,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     margin-right: 15px;
 }
 .label-shop span{
-    font-size: 20px;
+    font-size: 15px;
     color: white;
     cursor: pointer;
 }
@@ -273,6 +274,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 .content-header{
     display: flex;
     width: 100%;
+    margin-top: 20px;
 }
 /*-------------left-nav-bar----------------*/
 
@@ -295,7 +297,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     padding-right: 30px;
 }
 .nav-bar-left li{
-    padding: 25px 0;
+    padding: 18px 0;
     font-size: 15px;
     text-decoration: none;
     color: #333333;
@@ -405,58 +407,63 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 .menu-content-header a:before{
     content: '';
     display: block;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .living-room:before{
     background-image: url("../../images/gost.png");
-    width: 78px;
-    height: 57px;
+    width: 58px;
+    height: 37px;
 }
 .bedroom:before{
     background-image: url("../../images/bad.png");
-    width: 91px;
-    height: 89px;
+    width: 61px;
+    height: 59px;
 }
 .nursery:before{
     background-image: url("../../images/no-translate-detected.png");
-    width: 80px;
-    height: 56px;
+    width: 50px;
+    height: 36px;
 }
 .kitchen:before{
     background-image: url("../../images/cook.png");
-    width: 70px;
-    height: 57px;
+    width: 50px;
+    height: 37px;
 }
 .bathroom:before{
     background-image: url("../../images/vanna.png");
-    width: 68px;
-    height: 56px;
+    width: 48px;
+    height: 36px;
 }
 .hallway:before{
     background-image: url("../../images/commod.png");
-    width: 70px;
-    height: 56px;
+    width: 50px;
+    height: 36px;
 }
 .office:before{
     background-image: url("../../images/office.png");
-    width: 91px;
-    height: 54px;
+    width: 71px;
+    height: 34px;
 }
 .balcony:before{
     background-image: url("../../images/balcony.png");
-    width: 65px;
-    height: 55px;
+    width: 45px;
+    height: 35px;
 }
 .menu-content-header .mark{
     top: auto;
-    bottom: 80px;
-    right: -35px;
+    bottom: 61px;
+    right: -33px;;
     background-color: transparent;
 }
 
 /*------------------carousel--------------*/
 
 .w-100{
-    max-width: 800px;
+    max-width: 700px;
+}
+.width-carousel{
+    width: 100%;
 }
 .content-slider{
     display: flex;
@@ -481,19 +488,19 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     flex-direction: column;
     align-items: center;
     position: absolute;
-    left: 115px;
+    left: -19%;
     right: 0;
     top: 55px;
 }
 .title-item h3{
     font-weight: 100;
-    font-size: 36px;
+    font-size: 25px;
     text-align: center;
-    max-width: 453px;
+    max-width: 351px;
 }
 .title-item span{
-    font-size: 50px;
-    margin-top: 25px;
+    font-size: 40px;
+    margin-top: 20px;
 }
 .padding-top-carousel{
     padding-top: 147px;
@@ -502,25 +509,25 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 350px;
+    max-width: 280px;
     width: 100%;
     height: auto;
     background-color: rgba(243, 189, 78, 0.5);
-    padding: 40px 58px;
+    padding: 30px 40px;
     position: absolute;
     right: 0;
     bottom: 0;
     top: 0;
-    max-height: 530px;
+    max-height: 430px;
     -webkit-box-shadow: 0px 2px 13px -1px rgba(153,134,117,1);
     -moz-box-shadow: 0px 2px 13px -1px rgba(153,134,117,1);
     box-shadow: 0px 2px 13px -1px rgba(153,134,117,1);
 }
 .banner-content h2{
-    font-size: 54px;
+    font-size: 34px;
     color: #ffffff;
     text-align: center;
-    line-height: 86px;
+    line-height: 56px;
     margin-bottom: 40px;
 }
 .banner-btn{
@@ -528,11 +535,11 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     border: none;
     outline: none;
     cursor: pointer;
-    font-size: 25px;
+    font-size: 20px;
     color: #ffffff;
-    max-width: 234px;
+    max-width: 134px;
     width: 100%;
-    padding: 25px 0;
+    padding: 11px 0;
     border-radius: 25px;
 }
 .banner-btn:hover,
@@ -822,11 +829,12 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 .hit,
 .new-mark,
 .sale-mark{
-    width: 43px;
-    height: 48px;
+    width: 35px;
+    height: 40px;
+    background-size: contain;
     background-repeat: no-repeat;
     color: #ffffff;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 700;
     display: flex;
     align-items: center;
