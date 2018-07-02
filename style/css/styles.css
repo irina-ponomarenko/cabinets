@@ -58,7 +58,7 @@ a img {
     border: none;
 }
 * a{
-    font-size: 21px;
+    font-size: 15px;
     text-decoration: none;
     color: #333333;
     cursor: pointer;
@@ -283,7 +283,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     height: 100%;
     background-position: right;
     background-size: contain;
-    position: relative;
+    position: sticky;
     transition: .4s;
 }
 .left-nav-bar.hide {
@@ -295,9 +295,20 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 }
 .nav-bar-left li{
     padding: 25px 0;
+    font-size: 15px;
+    text-decoration: none;
+    color: #333333;
+    cursor: pointer;
+    font-family: 'Museo Cyrl';
 }
 .sale{
     padding: 25px 0;
+}
+.sale-none-js{
+    display: none;
+}
+.none-padding{
+    padding: 0;
 }
 .sale a{
     display: flex;
@@ -980,9 +991,10 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 }
 .img-menu{
     position: absolute;
-    top: 0;
-    left: 363px;
+    top: 94px;
+    left: 299px;
     display: none;
+    z-index: 150;
 }
 .img-menu.open {
     display: block;
