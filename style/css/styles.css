@@ -128,9 +128,10 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-bottom: 30px;
 }
 .wrapper-nav-center{
-    padding: 72px 0;
+    padding: 20px 0;
     display: flex;
     max-width: 1540px;
     margin: 0 auto;
@@ -300,6 +301,8 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     color: #333333;
     cursor: pointer;
     font-family: 'Museo Cyrl';
+    display: flex;
+    justify-content: space-between;
 }
 .sale{
     padding: 25px 0;
@@ -1380,13 +1383,21 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 .social-list{
     margin-top: 30px;
 }
-
-
-
 .fixed-header {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     padding: 0 40px;
+    z-index: 1000000;
+    background-color: #f4f4f4;
+}
+.fixed-header .logo{
+    display: none;
+}
+.fixed-header .sale-none-js{
+    display: flex;
+}
+.fixed-header .sale-none{
+    display: none;
 }
