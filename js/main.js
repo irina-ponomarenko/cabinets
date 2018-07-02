@@ -37,4 +37,22 @@ $(document).ready(function() {
     $('#sub-menu-close').on('click', function() {
         $('#sub-menu-block').removeClass('open');
     });
+
+
+
+    let elSticky = $('#header-sticky');
+    let stickyOffset = elSticky.offset().top;
+
+    $(window).scroll(function() {
+        let scroll = $(window).scrollTop();
+
+        if (scroll >= stickyOffset) {
+            elSticky.addClass('fixed');
+            elSticky.next().css('margin-top', elSticky.outerHeight());
+        }
+        else {
+            elSticky.removeClass('fixed');
+            elSticky.next().css('margin-top', 0);
+        }
+    });
 });
