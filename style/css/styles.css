@@ -1409,3 +1409,14 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 .fixed-header .sale-none{
     display: none;
 }
+
+.carousel-item .more,
+.carousel-item h2{
+    opacity: 0;
+    transition: all 1s linear;
+}
+
+.carousel-item.active .more,
+.carousel-item.active h2{
+    opacity: 1;
+}
