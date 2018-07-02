@@ -47,11 +47,11 @@ $(document).ready(function() {
         let scroll = $(window).scrollTop();
 
         if (scroll >= stickyOffset) {
-            elSticky.addClass('fixed');
+            elSticky.addClass('fixed-header');
             elSticky.next().css('margin-top', elSticky.outerHeight());
         }
         else {
-            elSticky.removeClass('fixed');
+            elSticky.removeClass('fixed-header');
             elSticky.next().css('margin-top', 0);
         }
     });

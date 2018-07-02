@@ -132,6 +132,8 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 .wrapper-nav-center{
     padding: 72px 0;
     display: flex;
+    max-width: 1540px;
+    margin: 0 auto;
     align-items: flex-end;
     justify-content: space-between;
 }
@@ -1369,8 +1371,10 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 
 
 
-.wrapper-nav-center.fixed {
+.fixed-header {
     position: fixed;
     top: 0;
-    width: 1540px;
+    left: 0;
+    right: 0;
+    padding: 0 40px;
 }
