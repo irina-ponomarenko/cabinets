@@ -296,6 +296,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 }
 .wrap-hide-menu{
     transition: .4s;
+    height: 100vh;
 }
 .left-nav-bar.hide .wrap-hide-menu{
     margin-left: -300px;
@@ -389,6 +390,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     position: absolute;
     right: -30px;
     top: 50%;
+    z-index: 1000000;
 }
 .chevron-left:focus,
 .chevron-right:focus{
