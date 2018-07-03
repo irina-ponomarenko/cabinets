@@ -286,7 +286,6 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     background-position: right;
     background-size: contain;
     position: relative;
-    transition: .4s;
 }
 .left-nav-bar.fixed-left-nav{
     position: fixed;
@@ -295,8 +294,14 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 .left-nav-bar.fixed-left-nav .sale{
     display: none;
 }
-.left-nav-bar.hide{
-    margin-left: -290px;
+.wrap-hide-menu{
+    transition: .4s;
+}
+.left-nav-bar.hide .wrap-hide-menu{
+    margin-left: -300px;
+}
+.left-nav-bar.hide .menu-overflow{
+    overflow: hidden;
 }
 .nav-bar-left{
     position: sticky;
@@ -310,6 +315,9 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 }
 .left-nav-bar.hide .nav-bar-left{
     z-index: 10;
+}
+.left-nav-bar.hide .chevron-left{
+    right: 10px;
 }
 .nav-bar-left li{
     padding: 18px 0;
