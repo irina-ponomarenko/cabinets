@@ -8,4 +8,203 @@
     .content-navigation ul li a{
         font-size: 25px;
     }
+    .chevron-left,
+    .chevron-right {
+        width: 40px;
+        height: 40px;
+        right: -20px;
+    }
+    .chevron-left i{
+        font-size: 37px;
+    }
+    .tabs_menu li h2{
+        font-size: 23px;
+    }
+    .wrap-content-sliders{
+        padding: 30px 0 30px 50px;
+    }
+    .card-content{
+        max-width: 300px;
+        min-height: 360px;
+    }
+    .jcarousel img{
+        margin-top: 50px;
+    }
+    .title-card h4{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 23px;
+    }
+    .title-card h3{
+        font-size: 15px;
+    }
+    .title-card span{
+        font-size: 14px;
+    }
+    .jcarousel{
+        max-width: 934px;
+    }
+    .title-card p{
+        font-size: 15px;
+        line-height: 8px;
+    }
+    .star li{
+        font-size: 20px;
+    }
+    .pay{
+        font-size: 16px;
+        padding: 10px 0;
+        margin-top: 15px;
+    }
+    .jcarousel-control-prev{
+        font-size: 24px;
+    }
+    .jcarousel-control-prev, .jcarousel-control-next{
+        width: 35px;
+        height: 35px;
+    }
+    .jcarousel-control-prev{
+        left: -18px;
+    }
+    .jcarousel-wrapper{
+        max-width: 934px;
+    }
+    .jcarousel-control-next {
+        right: -10px;
+        font-size: 24px;
+    }
+    .banner-content-right{
+        max-width: 280px;
+        padding: 30px 20px 30px 55px;
+    }
+    .banner-list li:before{
+        width: 37px;
+        height: 35px;
+        background-size: contain;
+        top: -12px;
+        left: -45px;
+    }
+    .banner-content-right h2{
+        font-size: 16px;
+    }
+    .banner-content-right p{
+        font-size: 15px;
+    }
+    .banner-list li{
+        margin-bottom: 22px;
+    }
+    .title-section{
+        font-size: 23px;
+        margin: 30px 0;
+    }
+    .img-profile img{
+        max-width: 55px;
+    }
+    .message h3{
+        font-size: 16px;
+    }
+    .blue-content h2 {
+        font-size: 22px;
+    }
+    .vertical-slider{
+        margin: 60px 0 0;
+    }
+    .amazingcarousel-item{
+        margin-bottom: 22px !important;
+    }
+    .amazingcarousel-next{
+        bottom: -2%;
+    }
+    .amazingcarousel-list-wrapper{
+        height: 93% !important;
+    }
+    .banner-content-right{
+        min-height: 400px;
+    }
+    .title-carousel-slide h2{
+        font-size: 40px;
+        max-width: 426px;
+    }
+    .info-slider img{
+        max-width: 320px;
+    }
+    .slide-card h3{
+        margin-top: 15px;
+    }
+    .more{
+        font-size: 15px;
+        padding: 15px 0;
+        margin-top: 25px;
+    }
+    .header-footer{
+        max-width: 1620px;
+        padding-top: 46px;
+        padding-left: 50px;
+        margin-bottom: 40px;
+    }
+    .card-footer{
+        min-height: 0 !important;
+    }
+    .footer-carousel img{
+        margin-top: 0;
+    }
+    .content-footer{
+        padding: 0 30px 25px 50px;
+    }
+    .wrapper-list h2{
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .wrapper-list ul li {
+        padding: 12px 0;
+    }
+    .email{
+        padding: 10px 10px 10px 15px;
+        max-width: 161px;
+    }
+    .btn-submit{
+        font-size: 13px;
+    }
+    .footer-banner{
+        padding: 30px 15px;
+    }
+    .custom-control-label::after,
+    .custom-control-label::before{
+        width: 20px;
+        height: 20px;
+    }
+    .custom-control-label{
+        padding-left: 8px;
+        font-size: 12px;
+        line-height: 24px;
+    }
+    .custom-control{
+        margin-bottom: 20px;
+    }
+    .footer-social li{
+        width: 35px;
+        height: 35px
+    }
+    .footer-social li a{
+        font-size: 20px;
+    }
+    .footer-banner h2{
+        line-height: 20px;
+    }
+    .footer-bottom{
+        padding: 25px 0 10px 0;
+    }
+    .logo-footer h2{
+        font-size: 35px;
+    }
+    .footer-bottom p {
+        font-size: 15px;
+        text-align: center;
+    }
+    .carousel-control-prev{
+        left: -94px !important;
+    }
+    .carousel-control-next{
+        right: -20px;
+    }
 }

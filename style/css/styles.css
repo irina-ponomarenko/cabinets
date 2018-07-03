@@ -294,7 +294,6 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 }
 .nav-bar-left{
     width: 300px;
-    padding-right: 30px;
 }
 .nav-bar-left li{
     padding: 18px 0;
@@ -305,6 +304,25 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     font-family: 'Museo Cyrl';
     display: flex;
     justify-content: space-between;
+    padding-right: 15px;
+}
+.nav-bar-left li:hover{
+   border-bottom: 1px solid lightgrey;
+    border-top: 1px solid lightgrey;
+
+}
+.icon-none{
+    background-image: none;
+}
+.icon-none i{
+    color: black;
+    font-size: 20px;
+}
+.sub-chevron{
+    display: none;
+}
+.nav-bar-left li:hover .sub-chevron{
+    display: flex;
 }
 .sale{
     padding: 25px 0;
@@ -584,29 +602,42 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 .wrap-content-sliders{
     padding: 44px 0 44px 50px;
 }
-.content-navigation ul{
+.tabs_menu {
     display: flex;
     align-items: center;
 }
-.content-navigation ul li{
+.tabs_menu  li{
     border-left: 4px solid #a6a6a6;
     margin-right: 44px;
+    cursor: pointer;
 }
-.content-navigation ul li:last-child{
+.tabs_menu  li:last-child{
     margin-right: 0;
 }
-.content-navigation ul li a{
+.tabs_menu  li h2{
     font-size: 33px;
     font-weight: 700;
     margin-left: 10px;
     color: #b7b7b7;
 }
-.active-link{
-    border-left: 4px solid #4f6790 !important;
+
+ul .active-tab{
+    border-left: 4px solid #4f6790;
 }
-.active-link a{
+.active-tab h2{
     color: #333333 !important;
 }
+.tabs .content {
+    display:none;
+}
+.tabs .content.active-tab{
+    display:flex !important;
+    align-items: center;
+    justify-content: space-between;
+    border-left: none;
+}
+
+
 
 
 
@@ -791,7 +822,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 }
 .banner-content-right h2{
     font-size: 18px;
-    color: #ffffff;
+    color: #ffffff !important;
     font-weight: 700;
     text-align: left;
     line-height: 20px;
@@ -802,11 +833,11 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     color: #ffffff;
     font-size: 18px;
 }
-.content{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+/*.content{*/
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*justify-content: space-between;*/
+/*}*/
 .banner-list li{
     margin-bottom: 35px;
     position: relative;
@@ -1141,8 +1172,9 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     width: 30px;
     height: 30px;
 }
-.carousel-control-prev-icon i{
-    font-size: 40px;
+.carousel-control-prev-icon i,
+.carousel-control-next-icon i{
+    font-size: 20px;
     color: black;
 }
 .carousel-control-prev{

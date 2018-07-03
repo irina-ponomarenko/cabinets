@@ -55,4 +55,13 @@ $(document).ready(function() {
             elSticky.next().css('margin-top', 0);
         }
     });
+    $(".tabs_menu li").click(function() { // Событие нажатия на элемент меню вкладок
+        if (!$(this).hasClass("active-tab")) { // Проверка, не нажали ли мы на уже активный пункт
+            var i = $(this).index(); // Получаем порядковый номер нажатого пункта, отстче идет от 0 (0,1,2)
+            $(".tabs_menu li.active-tab").removeClass("active-tab"); // Удаляем активный класс у прошлого пункта меню
+            $(".tabs .active-tab").hide().removeClass("active-tab"); // Скрываем и удаляем активный класс у прошлого контейнера с содержимым
+            $(this).addClass("active-tab"); // Добавляем нажатому пункту меню активный класс
+            $($(".tabs").children(".content")[i]).fadeIn(2000).addClass("active-tab"); // Показываем и добавляем активный класс соответствующему контейнеру
+        }
+    });
 });
