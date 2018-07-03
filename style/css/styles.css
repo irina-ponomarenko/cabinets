@@ -66,6 +66,7 @@ a img {
 * a:hover{
     text-decoration: none;
     transition: .3s;
+    color: #4F6692;
 }
 * a, h1, h2, h3, h4, h5, h6, p, span{
     font-family: 'Museo Cyrl';
