@@ -62,6 +62,8 @@ $(document).ready(function() {
             $(".tabs .active-tab").hide().removeClass("active-tab"); // Скрываем и удаляем активный класс у прошлого контейнера с содержимым
             $(this).addClass("active-tab"); // Добавляем нажатому пункту меню активный класс
             $($(".tabs").children(".content")[i]).fadeIn(2000).addClass("active-tab"); // Показываем и добавляем активный класс соответствующему контейнеру
+
+            $('.jcarousel').jcarousel('reload');
         }
     });
 });
