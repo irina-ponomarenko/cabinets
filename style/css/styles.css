@@ -352,6 +352,10 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 .sale{
     padding: 25px 0;
 }
+.sale a:hover h2{
+    color: #df2323;
+    transition: .3s;
+}
 .sale-none-js{
     display: none;
 }
@@ -368,13 +372,34 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     font-weight: 900;
     margin-right: 15px;
 }
-.sale-label{
+.sale a h2{
+    position: relative;
+}
+.sale a h2:before{
+    content: '';
+    position: absolute;
     background-image: url("../../images/percent.png");
     background-repeat: no-repeat;
     width: 32px;
     height: 32px;
     background-size: contain;
+    top: -5px;
+    right: -50px;
+    background-size: contain;
 }
+.sale  a h2:hover:before{
+    content: '';
+    position: absolute;
+    background-image: url("../../images/percent-hover.png");
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 32px;
+    background-size: contain;
+    top: -5px;
+    right: -50px;
+    background-size: contain;
+}
+
 .chevron-left,
 .chevron-right{
     width: 60px;
@@ -448,50 +473,83 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     background-repeat: no-repeat;
     background-size: contain;
 }
+.menu-content-header a:hover h3{
+    color: #4F6692;
+}
 .menu-content-header a:before{
     content: '';
     display: block;
     background-size: contain;
     background-repeat: no-repeat;
 }
+.menu-content-header a:hover:before{
+    content: '';
+    display: block;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 .living-room:before{
-    background-image: url("../../images/gost.png");
-    width: 58px;
+    background: url("../../images/gost.png") center;
+    height: 37px;
+}
+.living-room:hover:before{
+    background: url("../../images/gost-hover.png") center;
     height: 37px;
 }
 .bedroom:before{
-    background-image: url("../../images/bad.png");
-    width: 61px;
+    background: url("../../images/bad.png") center;
+    height: 59px;
+}
+.bedroom:hover:before{
+    background: url("../../images/bad-hover.png") center;
     height: 59px;
 }
 .nursery:before{
-    background-image: url("../../images/no-translate-detected.png");
-    width: 50px;
+    background: url("../../images/no-translate-detected.png") center;
+    height: 36px;
+}
+.nursery:hover:before{
+    background: url("../../images/no-translate-detected-hover.png") center;
     height: 36px;
 }
 .kitchen:before{
-    background-image: url("../../images/cook.png");
-    width: 50px;
+    background: url("../../images/cook.png") center;
+    height: 37px;
+}
+.kitchen:hover:before{
+    background: url("../../images/cook-hover.png") center;
     height: 37px;
 }
 .bathroom:before{
-    background-image: url("../../images/vanna.png");
-    width: 48px;
+    background: url("../../images/vanna.png") center;
+    height: 36px;
+}
+.bathroom:hover:before{
+    background: url("../../images/vanna-hover.png") center;
     height: 36px;
 }
 .hallway:before{
-    background-image: url("../../images/commod.png");
-    width: 50px;
+    background: url("../../images/commod.png") center;
+    height: 36px;
+}
+.hallway:hover:before{
+    background: url("../../images/commod-hover.png") center;
     height: 36px;
 }
 .office:before{
-    background-image: url("../../images/office.png");
-    width: 71px;
+    background: url("../../images/office.png") center;
+    height: 34px;
+}
+.office:hover:before{
+    background: url("../../images/office-hover.png") center;
     height: 34px;
 }
 .balcony:before{
-    background-image: url("../../images/balcony.png");
-    width: 45px;
+    background: url("../../images/balcony.png") center;
+    height: 35px;
+}
+.balcony:hover:before{
+    background: url("../../images/balcony-hover.png") center;
     height: 35px;
 }
 .menu-content-header .mark{
