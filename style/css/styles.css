@@ -282,17 +282,25 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     width: 362px;
     background-image: url("../../images/border-nav.png");
     background-repeat: no-repeat;
-    min-height: 630px;
-    height: 100%;
+    z-index: 100;
     background-position: right;
     background-size: contain;
-    position: sticky;
+    position: relative;
     transition: .4s;
 }
-.left-nav-bar.hide {
+.left-nav-bar.fixed-left-nav{
+    position: fixed;
+    top: 0;
+}
+.left-nav-bar.fixed-left-nav .sale{
+    display: none;
+}
+.left-nav-bar.hide{
     margin-left: -406px;
 }
 .nav-bar-left{
+    position: sticky;
+    top: 100px;
     width: 300px;
 }
 .nav-bar-left li{

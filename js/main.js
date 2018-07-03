@@ -43,17 +43,45 @@ $(document).ready(function() {
     let elSticky = $('#header-sticky');
     let stickyOffset = elSticky.offset().top;
 
+    let elLeftNav = $('#left-nav-bar');
+    let modeNav = false;
+
     $(window).scroll(function() {
         let scroll = $(window).scrollTop();
 
-        if (scroll >= stickyOffset) {
+        if (!modeNav && scroll >= stickyOffset) {
+            $('#sale').addClass('hidden');
             elSticky.addClass('fixed-header');
             elSticky.next().css('margin-top', elSticky.outerHeight());
+
+            elLeftNav.addClass('fixed-left-nav');
+            elLeftNav.css('top', $('#header-sticky').outerHeight());
+
+            $('#btn-toggle-vertical-menu').trigger('click');
+
+            modeNav = true;
         }
-        else {
+        else if (modeNav && scroll < stickyOffset) {
             elSticky.removeClass('fixed-header');
-            elSticky.next().css('margin-top', 0);
+            elSticky.next().css('margin-top', 20);
+
+            elLeftNav.removeClass('fixed-left-nav');
+            elLeftNav.css('top', 'auto');
+
+            $('#btn-toggle-vertical-menu').trigger('click');
+
+            modeNav = false;
         }
+
+
+        // if (scroll + $('#header-sticky').outerHeight() >= leftNavOffset) {
+        //     elLeftNav.addClass('fixed-left-nav');
+        //     elLeftNav.css('top', $('#header-sticky').outerHeight());
+        // }
+        // else {
+        //     elLeftNav.removeClass('fixed-left-nav');
+        //     elLeftNav.css('top', 'auto');
+        // }
     });
     $(".tabs_menu li").click(function() { // Событие нажатия на элемент меню вкладок
         if (!$(this).hasClass("active-tab")) { // Проверка, не нажали ли мы на уже активный пункт
