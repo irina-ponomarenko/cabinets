@@ -279,7 +279,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 /*-------------left-nav-bar----------------*/
 
 .left-nav-bar{
-    width: 362px;
+    /*width: 362px;*/
     background-image: url("../../images/border-nav.png");
     background-repeat: no-repeat;
     z-index: 100;
@@ -296,12 +296,20 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     display: none;
 }
 .left-nav-bar.hide{
-    margin-left: -406px;
+    margin-left: -290px;
 }
 .nav-bar-left{
     position: sticky;
     top: 100px;
     width: 300px;
+}
+.left-nav-bar.fixed-left-nav .nav-bar-left{
+    background: #fff;
+    margin-left: -40px;
+    padding-left: 40px;
+}
+.left-nav-bar.hide .nav-bar-left{
+    z-index: 10;
 }
 .nav-bar-left li{
     padding: 18px 0;
@@ -1041,8 +1049,8 @@ ul .active-tab{
 }
 .img-menu{
     position: absolute;
-    top: 94px;
-    left: 299px;
+    top: 0;
+    left: 260px;
     display: none;
     z-index: 150;
 }
