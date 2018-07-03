@@ -207,4 +207,17 @@
     .carousel-control-next{
         right: -20px;
     }
+    .circular-nav h2{
+        font-size: 37px;
+        top: 11%;
+    }
+    .circular-nav{
+        max-width: 450px;
+    }
+    .img-menu img{
+        max-width: 450px;
+    }
+    .img-menu i{
+        font-size: 23px;
+    }
 }
