@@ -41,7 +41,7 @@ $(document).ready(function() {
 
 
     let elSticky = $('#header-sticky');
-    let stickyOffset = elSticky.offset().top;
+    let stickyOffset = elSticky.offset().top + $('.wrapper-nav-center').outerHeight();
 
     let elLeftNav = $('#left-nav-bar');
     let modeNav = false;
@@ -52,7 +52,7 @@ $(document).ready(function() {
         if (!modeNav && scroll >= stickyOffset) {
             $('#sale').addClass('hidden');
             elSticky.addClass('fixed-header');
-            elSticky.next().css('top', elSticky.outerHeight());
+            $('.header').css('margin-top', elSticky.outerHeight());
 
             elLeftNav.addClass('fixed-left-nav');
             elLeftNav.css('top', $('#header-sticky').outerHeight());
@@ -65,7 +65,7 @@ $(document).ready(function() {
         }
         else if (modeNav && scroll < stickyOffset) {
             elSticky.removeClass('fixed-header');
-            elSticky.next().css('top', 20);
+            $('.header').css('margin-top', 0);
 
             elLeftNav.removeClass('fixed-left-nav');
             elLeftNav.css('top', 'auto');
