@@ -597,7 +597,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     text-align: right;
 }
 .carousel-change{
-    bottom: -64px;
+    bottom: 15px;
 }
 .carousel-change li{
     width: 20px ;
@@ -629,6 +629,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     display: inline-block;
     position: relative;
     z-index: 1000;
+    text-align: center;
     vertical-align: middle;
     max-width: 280px;
     width: 100%;
@@ -669,6 +670,8 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 /*----------------------content--------------*/
 
 .content-wrapper-section{
+    max-width: 1620px;
+    margin:  0 auto;
     width: 100%;
     background-color: #ffffff;
 }
@@ -778,13 +781,12 @@ ul .active-tab:before{
 
 .content-carousel{
     border-bottom: 1px solid #acd373;
-    max-width: 85%;
     margin-right: 30px;
 }
 .jcarousel-wrapper {
     margin: 30px auto;
     position: relative;
-    max-width: 83%;
+    max-width: 1112px;
 }
 
 /** Carousel **/
@@ -1315,7 +1317,10 @@ ul .active-tab:before{
     opacity: 1;
 }
 .carousel-control-prev{
-    left: -45px !important;
+    left: -113px !important;
+}
+.carousel-control-next {
+    right: -60px;
 }
 .content-bottom{
     display: flex;
@@ -1346,6 +1351,9 @@ ul .active-tab:before{
     width: 100%;
 }
 .header-footer{
+    max-width: 1620px;
+    width: 100%;
+    margin: 0 auto;
     padding-top: 66px;
     padding-left: 80px;
     margin-bottom: 50px;
@@ -1367,6 +1375,9 @@ ul .active-tab:before{
     height: 2px;
 }
 .content-footer{
+    max-width: 1620px;
+    margin:  0 auto;
+    width: 100%;
     padding: 0 40px 35px 80px;
 }
 .card-footer{
@@ -1390,10 +1401,6 @@ ul .active-tab:before{
 .footer-wrapper-carousel{
     margin-top: 0;
     margin-bottom: 50px;
-}
-.content-list-footer{
-    width: 85%;
-
 }
 .lists-footer{
     display: flex;
