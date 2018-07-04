@@ -81,9 +81,11 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 
 /*--------------------header---------------*/
 .header{
+    position: relative;
     width: 100%;
     margin: 0 auto;
     overflow: hidden;
+    padding: 25px 40px 100px;
 }
 .wrapper-content-header{
 
@@ -123,21 +125,24 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: absolute;
-    top: 30px;
-    left: 64px;
-    right: 55px;
+    /*position: absolute;*/
+    /*top: 30px;*/
+    /*left: 64px;*/
+    /*right: 55px;*/
     padding-bottom: 30px;
+
+    position: relative;
+    z-index: 100;
 }
 .wrapper-nav-center{
     padding: 20px 0;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    position: absolute;
-    top: 10%;
-    left: 40px;
-    right: 53px;
+    /*position: absolute;*/
+    /*top: 10%;*/
+    /*left: 40px;*/
+    /*right: 53px;*/
 }
 .wrapper-logo-search{
     display: flex;
@@ -285,9 +290,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     z-index: 100;
     background-position: right;
     background-size: contain;
-    position: absolute;
-    top: 25%;
-    left: 40px;
+    position: relative;
 }
 .left-nav-bar.fixed-left-nav{
     position: fixed;
@@ -323,8 +326,8 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     right: 10px;
 }
 .nav-bar-left li{
-    padding: 18px 0;
-    font-size: 15px;
+    padding: 25px 0;
+    font-size: 21px;
     text-decoration: none;
     color: #333333;
     cursor: pointer;
@@ -448,10 +451,10 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    position: absolute;
-    left: 26%;
-    right: 53px;
-    top: 25%;
+    /*position: absolute;*/
+    /*left: 26%;*/
+    /*right: 53px;*/
+    /*top: 25%;*/
 }
 .menu-content-header li{
     display: flex;
@@ -570,18 +573,29 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     width: 100%;
 }
 .content-slider{
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url("../../images/background-header.png");
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
+    /*background-image: url("../../images/background-header.png");*/
     display: flex;
     justify-content: flex-start;
-    position: relative;
-    padding: 25px 40px;
+    /*position: relative;*/
+    /*padding: 25px 40px;*/
+
+    /*margin-top: -140px;*/
 }
 .banner-slide{
-    display: flex;
-    padding-left: 10%;
-    padding-top: 10%;}
+    position: absolute;
+    bottom: 35px;
+    left: 340px;
+    right: 40px;
+    text-align: right;
+}
 .carousel-change{
     bottom: -64px;
 }
@@ -593,13 +607,10 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     border: 3px solid white;;
 }
 .title-item{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    left: 40%;
-    right: 0;
-    top: 10%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
 }
 .title-item h3{
     font-weight: 100;
@@ -611,13 +622,12 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     font-size: 40px;
     margin-top: 20px;
 }
-.padding-top-carousel{
-    padding-top: 147px;
-}
+
 .banner-content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: inline-block;
+    position: relative;
+    z-index: 1000;
+    vertical-align: middle;
     max-width: 280px;
     width: 100%;
     height: auto;
@@ -1574,4 +1584,38 @@ ul .active-tab:before{
 .carousel-item.active .more,
 .carousel-item.active h2{
     opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+.content-slider .carousel-inner {
+    height: 100%;
+}
+
+.content-slider .carousel-item {
+    padding-top: 180px;
+    position: relative;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../../images/background-header.png);
+}
+
+#header-sticky {
+    position: relative;
+    z-index: 100;
+}
+
+.slide-main-img {
+    max-width: 50%;
+    vertical-align: middle;
+    transform: translateX(60px);
 }
