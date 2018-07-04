@@ -1558,6 +1558,11 @@ ul .active-tab:before{
 .social-list{
     margin-top: 30px;
 }
+.header-sticky {
+    position: relative;
+    z-index: 100;
+    transition: .4s;
+}
 .header-sticky.fixed-header {
     position: fixed;
     top: 0;
@@ -1609,11 +1614,6 @@ ul .active-tab:before{
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url(../../images/background-header.png);
-}
-
-.header-sticky {
-    position: relative;
-    z-index: 100;
 }
 
 .slide-main-img {
