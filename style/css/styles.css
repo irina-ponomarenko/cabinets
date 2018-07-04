@@ -81,18 +81,12 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 
 /*--------------------header---------------*/
 .header{
-   width: 100%;
-    background-image: url("../../images/background-header.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-
-}
-.wrapper-content-header{
-    overflow: hidden;
-    max-width: 1620px;
     width: 100%;
     margin: 0 auto;
-    padding: 25px 40px;
+    overflow: hidden;
+}
+.wrapper-content-header{
+
 }
 .navigation-top{
     display: flex;
@@ -129,15 +123,21 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: absolute;
+    top: 30px;
+    left: 64px;
+    right: 55px;
     padding-bottom: 30px;
 }
 .wrapper-nav-center{
     padding: 20px 0;
     display: flex;
-    max-width: 1540px;
-    margin: 0 auto;
     align-items: flex-end;
     justify-content: space-between;
+    position: absolute;
+    top: 10%;
+    left: 40px;
+    right: 53px;
 }
 .wrapper-logo-search{
     display: flex;
@@ -280,13 +280,14 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 /*-------------left-nav-bar----------------*/
 
 .left-nav-bar{
-    /*width: 362px;*/
     background-image: url("../../images/border-nav.png");
     background-repeat: no-repeat;
     z-index: 100;
     background-position: right;
     background-size: contain;
-    position: relative;
+    position: absolute;
+    top: 25%;
+    left: 40px;
 }
 .left-nav-bar.fixed-left-nav{
     position: fixed;
@@ -297,7 +298,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 }
 .wrap-hide-menu{
     transition: .4s;
-    height: 100vh;
+    /*height: 100vh;*/
 }
 .left-nav-bar.hide .wrap-hide-menu{
     margin-left: -300px;
@@ -443,14 +444,14 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 .content-header-center{
     width: 100%;
 }
-.content-header-center {
-    max-width: 1532px;
-    margin: 0 auto;
-}
 .menu-content-header ul{
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    position: absolute;
+    left: 26%;
+    right: 53px;
+    top: 25%;
 }
 .menu-content-header li{
     display: flex;
@@ -563,19 +564,24 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 /*------------------carousel--------------*/
 
 .w-100{
-    max-width: 700px;
+    max-width: 50%;
 }
 .width-carousel{
     width: 100%;
 }
 .content-slider{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../../images/background-header.png");
     display: flex;
     justify-content: flex-start;
-    padding-bottom: 64px;
     position: relative;
-    margin-top: 58px;
-    margin-left: 58px;
+    padding: 25px 40px;
 }
+.banner-slide{
+    display: flex;
+    padding-left: 10%;
+    padding-top: 10%;}
 .carousel-change{
     bottom: -64px;
 }
@@ -590,10 +596,10 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: absolute;
-    left: -19%;
+    position: relative;
+    left: 40%;
     right: 0;
-    top: 55px;
+    top: 10%;
 }
 .title-item h3{
     font-weight: 100;
@@ -617,10 +623,6 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     height: auto;
     background-color: rgba(243, 189, 78, 0.5);
     padding: 30px 40px;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    top: 0;
     max-height: 430px;
     -webkit-box-shadow: 0px 2px 13px -1px rgba(153,134,117,1);
     -moz-box-shadow: 0px 2px 13px -1px rgba(153,134,117,1);
@@ -660,9 +662,6 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 }
 .content-section{
     display: flex;
-    max-width: 1620px;
-    width: 100%;
-    margin: 0 auto;
     padding: 0 40px 0 0;
     background-color: #fbfbfb;
     position: relative;
@@ -686,15 +685,17 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 }
 .wrap-content-sliders{
     padding: 44px 0 44px 50px;
+    width: 100%;
 }
 .tabs_menu {
     display: flex;
     align-items: center;
 }
 .tabs_menu  li{
-    border-left: 4px solid #a6a6a6;
     margin-right: 44px;
     cursor: pointer;
+    position: relative;
+    padding-left: 5px;
 }
 .tabs_menu  li:last-child{
     margin-right: 0;
@@ -704,10 +705,45 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     font-weight: 700;
     margin-left: 10px;
     color: #b7b7b7;
-}
 
+}
+.tabs_menu li:before {
+    content: '';
+    height: 28px;
+    position: absolute;
+    width: 4px;
+    background-color: #b7b7b7;
+    top: 5%;
+    bottom: 0;
+    left: 0;
+}
+.tabs_menu  li:hover:before{
+    content: '';
+    height: 43px;
+    position: absolute;
+    width: 4px;
+    background-color: #4b98c9;
+    top: -43%;
+    bottom: 0;
+    left: 0;
+    transition: .3s;
+}
+.tabs_menu li h2:hover{
+    color: #333333;
+    transition: .3s;
+}
 ul .active-tab{
-    border-left: 4px solid #4f6790;
+    position: relative;
+}
+ul .active-tab:before{
+    content: '';
+    height: 43px;
+    position: absolute;
+    width: 4px;
+    background-color: #4b98c9;
+    top: -43%;
+    bottom: 0;
+    left: 0;
 }
 .active-tab h2{
     color: #333333 !important;
@@ -730,11 +766,13 @@ ul .active-tab{
 
 .content-carousel{
     border-bottom: 1px solid #acd373;
+    max-width: 85%;
+    margin-right: 30px;
 }
 .jcarousel-wrapper {
     margin: 30px auto;
     position: relative;
-    max-width: 1112px;
+    max-width: 83%;
 }
 
 /** Carousel **/
@@ -742,8 +780,6 @@ ul .active-tab{
 .jcarousel {
     position: relative;
     overflow: hidden;
-    max-width: 1112px;
-    width: 100%;
 }
 
 .jcarousel .carousel-list {
@@ -1259,8 +1295,12 @@ ul .active-tab{
 }
 .carousel-control-prev-icon i,
 .carousel-control-next-icon i{
-    font-size: 20px;
+    font-size: 33px;
     color: black;
+}
+.carousel-control-prev,
+.carousel-control-next{
+    opacity: 1;
 }
 .carousel-control-prev{
     left: -45px !important;
@@ -1268,6 +1308,7 @@ ul .active-tab{
 .content-bottom{
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 .blue-content{
     background-color: #4b98c9;
@@ -1293,8 +1334,6 @@ ul .active-tab{
     width: 100%;
 }
 .header-footer{
-    max-width: 1620px;
-    margin: 0 auto;
     padding-top: 66px;
     padding-left: 80px;
     margin-bottom: 50px;
@@ -1316,8 +1355,6 @@ ul .active-tab{
     height: 2px;
 }
 .content-footer{
-    max-width: 1620px;
-    margin: 0 auto;
     padding: 0 40px 35px 80px;
 }
 .card-footer{
@@ -1343,6 +1380,7 @@ ul .active-tab{
     margin-bottom: 50px;
 }
 .content-list-footer{
+    width: 85%;
 
 }
 .lists-footer{

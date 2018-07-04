@@ -220,4 +220,47 @@
     .img-menu i{
         font-size: 23px;
     }
+    .carousel-change li{
+        width: 15px;
+        height: 15px;
+        border: 2px solid white;
+    }
+    ul .active-tab:before{
+        top: -49%;
+    }
+    .tabs_menu  li:hover:before{
+        content: '';
+        height: 33px;
+        position: absolute;
+        width: 4px;
+        background-color: #4b98c9;
+        top: -43%;
+        bottom: 0;
+        left: 0;
+        transition: .3s;
+    }
+    .tabs_menu  li:before{
+        content: '';
+        height: 23px;
+        position: absolute;
+        width: 4px;
+        background-color: #b7b7b7;
+        top: 0;
+        bottom: 0;
+        left: 0;
+    }
+    ul .active-tab:before{
+        content: '';
+        height: 33px;
+        position: absolute;
+        width: 4px;
+        background-color: #4b98c9;
+        top: -43%;
+        bottom: 0;
+        left: 0;
+    }
+    .w-100{
+        max-width: 58%;
+        height: 50%;
+    }
 }
