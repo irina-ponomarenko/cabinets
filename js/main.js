@@ -52,7 +52,7 @@ $(document).ready(function() {
         if (!modeNav && scroll >= stickyOffset) {
             $('#sale').addClass('hidden');
             elSticky.addClass('fixed-header');
-            elSticky.next().css('margin-top', elSticky.outerHeight());
+            elSticky.next().css('top', elSticky.outerHeight());
 
             elLeftNav.addClass('fixed-left-nav');
             elLeftNav.css('top', $('#header-sticky').outerHeight());
@@ -65,7 +65,7 @@ $(document).ready(function() {
         }
         else if (modeNav && scroll < stickyOffset) {
             elSticky.removeClass('fixed-header');
-            elSticky.next().css('margin-top', 20);
+            elSticky.next().css('top', 20);
 
             elLeftNav.removeClass('fixed-left-nav');
             elLeftNav.css('top', 'auto');

@@ -85,7 +85,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     width: 100%;
     margin: 0 auto;
     overflow: hidden;
-    padding: 25px 40px 100px;
+    padding: 25px 40px 170px;
 }
 .wrapper-content-header{
 
@@ -591,7 +591,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 }
 .banner-slide{
     position: absolute;
-    bottom: 35px;
+    bottom: 55px;
     left: 340px;
     right: 40px;
     text-align: right;
@@ -611,6 +611,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     left: 50%;
     transform: translateX(-50%);
     display: inline-block;
+    text-align: center;
 }
 .title-item h3{
     font-weight: 100;
@@ -1556,7 +1557,7 @@ ul .active-tab:before{
 .social-list{
     margin-top: 30px;
 }
-.fixed-header {
+.header-sticky.fixed-header {
     position: fixed;
     top: 0;
     left: 0;
@@ -1565,13 +1566,13 @@ ul .active-tab:before{
     z-index: 1000000;
     background-color: #f4f4f4;
 }
-.fixed-header .logo{
+.header-sticky.fixed-header .logo{
     display: none;
 }
-.fixed-header .sale-none-js{
+.header-sticky.fixed-header .sale-none-js{
     display: flex;
 }
-.fixed-header .sale-none{
+.header-sticky.fixed-header .sale-none{
     display: none;
 }
 
@@ -1602,20 +1603,21 @@ ul .active-tab:before{
 
 .content-slider .carousel-item {
     padding-top: 180px;
-    position: relative;
+    /*position: relative;*/
     height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url(../../images/background-header.png);
 }
 
-#header-sticky {
+.header-sticky {
     position: relative;
     z-index: 100;
 }
 
 .slide-main-img {
-    max-width: 50%;
+    width: 100%;
+    max-width: 70%;
     vertical-align: middle;
     transform: translateX(60px);
 }
