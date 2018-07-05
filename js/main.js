@@ -11,9 +11,15 @@ $(document).ready(function() {
     });
 
     $('#btn-toggle-vertical-menu2').on('click', function() {
+        let check = $('#left-nav-bar2').hasClass('hide');
+
         $('#left-nav-bar2').toggleClass('hide');
         $(this).toggleClass('align-right');
         $(this).find('.fa').toggleClass('fa-angle-right');
+
+        if (!check) {
+            $('#sub-menu-close').trigger('click');
+        }
     });
 
     $('#toggle-menu-vertical').on('click', function() {
@@ -38,10 +44,12 @@ $(document).ready(function() {
 
     $('.js-sub-menu').on('click', function() {
         $('#sub-menu-block').addClass('open');
+        $('#btn-toggle-vertical-menu2').addClass('hide');
     });
 
     $('#sub-menu-close').on('click', function() {
         $('#sub-menu-block').removeClass('open');
+        $('#btn-toggle-vertical-menu2').removeClass('hide');
     });
 
 
