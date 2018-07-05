@@ -10,6 +10,12 @@ $(document).ready(function() {
         $(this).find('.fa').toggleClass('fa-angle-right');
     });
 
+    $('#btn-toggle-vertical-menu2').on('click', function() {
+        $('#left-nav-bar2').toggleClass('hide');
+        $(this).toggleClass('align-right');
+        $(this).find('.fa').toggleClass('fa-angle-right');
+    });
+
     $('#toggle-menu-vertical').on('click', function() {
         let item = $('#left-bar-content');
         let check = item.hasClass('hidden');
@@ -43,50 +49,18 @@ $(document).ready(function() {
     let elSticky = $('#header-sticky');
     let stickyOffset = elSticky.offset().top + $('.wrapper-nav-center').outerHeight();
 
-    let elLeftNav = $('#left-nav-bar');
-    let modeNav = false;
-
     $(window).scroll(function() {
         let scroll = $(window).scrollTop();
 
-        if (!modeNav && scroll >= stickyOffset) {
-            $('#sale').addClass('hidden');
+        if (scroll >= stickyOffset) {
             elSticky.addClass('fixed-header');
-            $('.header').css('margin-top', elSticky.outerHeight());
-
-            elLeftNav.addClass('fixed-left-nav');
-            elLeftNav.css('top', $('#header-sticky').outerHeight());
-
-            if (!$('.left-nav-bar').hasClass('hide')) {
-                $('#btn-toggle-vertical-menu').trigger('click');
-            }
-
-            modeNav = true;
         }
-        else if (modeNav && scroll < stickyOffset) {
+        else if (scroll < stickyOffset) {
             elSticky.removeClass('fixed-header');
             $('.header').css('margin-top', 0);
-
-            elLeftNav.removeClass('fixed-left-nav');
-            elLeftNav.css('top', 'auto');
-
-            if ($('.left-nav-bar').hasClass('hide')) {
-                $('#btn-toggle-vertical-menu').trigger('click');
-            }
-
-            modeNav = false;
         }
-
-
-        // if (scroll + $('#header-sticky').outerHeight() >= leftNavOffset) {
-        //     elLeftNav.addClass('fixed-left-nav');
-        //     elLeftNav.css('top', $('#header-sticky').outerHeight());
-        // }
-        // else {
-        //     elLeftNav.removeClass('fixed-left-nav');
-        //     elLeftNav.css('top', 'auto');
-        // }
     });
+
     $(".tabs_menu li").click(function() { // Событие нажатия на элемент меню вкладок
         if (!$(this).hasClass("active-tab")) { // Проверка, не нажали ли мы на уже активный пункт
             var i = $(this).index(); // Получаем порядковый номер нажатого пункта, отстче идет от 0 (0,1,2)

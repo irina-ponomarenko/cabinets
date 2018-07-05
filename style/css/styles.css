@@ -86,6 +86,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     margin: 0 auto;
     overflow: hidden;
     padding: 25px 40px 170px;
+    z-index: 20;
 }
 .wrapper-content-header{
 
@@ -295,6 +296,8 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 .left-nav-bar.fixed-left-nav{
     position: fixed;
     top: 0;
+    bottom: 0;
+    z-index: 10;
 }
 .left-nav-bar.fixed-left-nav .sale{
     display: none;
@@ -304,7 +307,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     /*height: 100vh;*/
 }
 .left-nav-bar.hide .wrap-hide-menu{
-    margin-left: -300px;
+    margin-left: -240px;
 }
 .left-nav-bar.hide .menu-overflow{
     overflow: hidden;
@@ -322,8 +325,19 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 .left-nav-bar.hide .nav-bar-left{
     z-index: 10;
 }
+.left-nav-bar.hide .menu-overflow:after{
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 20px;
+    background: #ccc;
+    z-index: 10;
+}
 .left-nav-bar.hide .chevron-left{
-    right: 10px;
+    /*right: 10px;*/
 }
 .nav-bar-left li{
     padding: 25px 0;
