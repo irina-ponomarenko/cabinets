@@ -82,7 +82,6 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 /*--------------------header---------------*/
 .header{
     position: relative;
-    max-width: 1620px;
     width: 100%;
     margin: 0 auto;
     overflow: hidden;
@@ -296,7 +295,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 }
 .left-nav-bar.fixed-left-nav{
     position: fixed;
-    top: 0;
+    top: 83px;
     bottom: 0;
     z-index: 10;
 }
@@ -1017,6 +1016,7 @@ ul .active-tab:before{
     color: #ffffff;
     font-size: 12px;
     font-weight: 700;
+    font-family: 'Museo Cyrl';
     display: flex;
     align-items: center;
     justify-content: center;
