@@ -12,10 +12,11 @@
     .chevron-right {
         width: 40px;
         height: 40px;
-        right: -20px;
+        right: -22px;
     }
     .chevron-left i{
         font-size: 37px;
+        margin-right: 6px;
     }
     .tabs_menu li h2{
         font-size: 23px;
@@ -139,8 +140,11 @@
     .header-footer{
         max-width: 1620px;
         padding-top: 46px;
-        padding-left: 50px;
+        padding-left: 70px;
         margin-bottom: 40px;
+    }
+    .header{
+        padding-right: 30px;
     }
     .card-footer{
         min-height: 0 !important;
@@ -149,7 +153,7 @@
         margin-top: 0;
     }
     .content-footer{
-        padding: 0 30px 25px 50px;
+        padding: 0 30px 25px 70px;
     }
     .wrapper-list h2{
         font-size: 16px;
@@ -275,5 +279,23 @@
     }
     .title-item{
         top: -38px;
+    }
+    .sale a{
+        padding-left: 15px;
+    }
+    .wrapper-nav-center{
+        padding-left: 15px;
+    }
+    .navigation-top{
+        padding-left: 15px;
+    }
+    .left-nav-bar.hide .menu-overflow:after{
+        width: 20px;
+    }
+    .left-nav-bar.hide .wrap-hide-menu{
+        margin-left: -280px;
+    }
+    .content-section{
+        padding-right: 30px;
     }
 }
