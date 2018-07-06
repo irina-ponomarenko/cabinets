@@ -44,14 +44,23 @@ $(document).ready(function() {
 
     $('.js-sub-menu').on('click', function() {
         $('#sub-menu-block').addClass('open');
+        $('#btn-toggle-vertical-menu').addClass('hide');
+    });
+
+    $('.js-sub-menu2').on('click', function() {
+        $('#sub-menu-block2').addClass('open');
         $('#btn-toggle-vertical-menu2').addClass('hide');
     });
 
     $('#sub-menu-close').on('click', function() {
         $('#sub-menu-block').removeClass('open');
-        $('#btn-toggle-vertical-menu2').removeClass('hide');
+        $('#btn-toggle-vertical-menu').removeClass('hide');
     });
 
+    $('#sub-menu-close2').on('click', function() {
+        $('#sub-menu-block2').removeClass('open');
+        $('#btn-toggle-vertical-menu2').removeClass('hide');
+    });
 
 
     let elSticky = $('#header-sticky');
