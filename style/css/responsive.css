@@ -9,12 +9,13 @@
         font-size: 25px;
     }
     .chevron-left,
+    .chevron-left-btn,
     .chevron-right {
         width: 40px;
         height: 40px;
         right: -22px;
     }
-    .chevron-left i{
+    .chevron-left-btn i{
         font-size: 37px;
         margin-right: 6px;
     }
@@ -213,7 +214,8 @@
     }
     .circular-nav h2{
         font-size: 37px;
-        top: 11%;
+        top: 15%;
+        left: 34%;
     }
     .circular-nav{
         max-width: 450px;
@@ -226,6 +228,9 @@
     }
     .img-menu i{
         font-size: 23px;
+    }
+    .circular-nav ul{
+        top: 29%;
     }
     .circular-nav ul li a{
         font-size: 15px;

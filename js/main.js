@@ -43,6 +43,9 @@ $(document).ready(function() {
     });
 
     $('.js-sub-menu').on('click', function() {
+        $('#left-nav-bar').addClass('color-block');
+        $('.color-red').css('background', 'red');
+        $('.circular-block').addClass('color-red');
         $('#sub-menu-block').addClass('open');
         $('#btn-toggle-vertical-menu').addClass('hide');
     });

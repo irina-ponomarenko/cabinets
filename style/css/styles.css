@@ -313,6 +313,25 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     transition: .4s;
     /*height: 100vh;*/
 }
+.color-block{
+    background-color: #ffffff;
+    height: 100vh;
+    -webkit-box-shadow: -1px 5px 28px 0px rgba(0,0,0,0.59);
+    -moz-box-shadow: -1px 5px 28px 0px rgba(0,0,0,0.59);
+    box-shadow: -1px 5px 28px 0px rgba(0,0,0,0.59);
+    z-index: 200;
+}
+.circular-block{
+    position: absolute;
+    top: -18px;
+    bottom: -18px;
+    left: 0;
+    right: 0;
+    background: white;
+    width: 65%;
+    border-top-right-radius: 100%;
+    border-bottom-right-radius: 100%;
+}
 .left-nav-bar.hide .wrap-hide-menu{
     margin-left: -271px;
 }
@@ -437,6 +456,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 }
 
 .chevron-left,
+.chevron-left-btn,
 .chevron-right{
     width: 60px;
     height: 60px;
@@ -453,14 +473,14 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     top: 50%;
     z-index: 1000000;
 }
-.chevron-left:focus,
+.chevron-left-btn:focus,
 .chevron-right:focus{
     outline: none;
 }
-.chevron-left.align-right{
+.chevron-left-btn.align-right{
     text-align: right;
 }
-.chevron-left i{
+.chevron-left-btn i{
     font-size: 47px;
     margin-right: 11px;
     color: #848484;
@@ -470,6 +490,9 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     font-size: 47px;
     color: #848484;
     margin-bottom: 5px;
+}
+.chevron-left-btn.hide{
+    display: none;
 }
 
 /*-----------------menu-content-header---------------*/
@@ -492,6 +515,10 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     flex-direction: column;
     align-items: center;
     padding: 0 20px;
+}
+.img-menu .close-btn{
+    width: 20px;
+    height: 20px;
 }
 .menu-content-header ul li:last-child{
     padding-right: 0;
@@ -625,6 +652,8 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     bottom: 55px;
     left: 340px;
     right: 40px;
+    display: flex;
+    align-items: center;
     text-align: right;
 }
 .carousel-change{
@@ -655,7 +684,35 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     font-size: 40px;
     margin-top: 20px;
 }
-
+.custom-control-btn{
+    width: 20px;
+    height: 20px;
+    background: #6eb2fb;
+    background-image: url("../../images/galochka.png");
+    background-repeat: no-repeat;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 12px;
+    cursor: pointer;
+}
+.custom-control-btn:hover{
+    background: #418ad9;
+    transition: .3s;
+}
+.custom-checkbox{
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.custom-control-text{
+    margin-left: 10px;
+    line-height: 20px;
+}
 .banner-content{
     display: inline-block;
     position: relative;
@@ -1203,6 +1260,7 @@ ul .active-tab:before{
     left: 260px;
     display: none;
     z-index: 150;
+    overflow: hidden;
 }
 .img-menu.open {
     display: block;
@@ -1211,7 +1269,7 @@ ul .active-tab:before{
     position: relative;
     height: 100vh;
 }
-.img-menu i{
+.img-menu .close-btn{
     position: absolute;
     right: 30px;
     top: 20px;
@@ -1239,14 +1297,20 @@ ul .active-tab:before{
 .circular-nav ul{
     left: 35px;
     position: absolute;
-    top: 20%;
+    top: 29%;
+}
+.color-li-red{
+    background-color: red;
 }
 .circular-nav h2{
     font-size: 46px;
     font-weight: 500;
     position: absolute;
-    left: 19%;
-    top: 15%;
+    left: 31%;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;;
+    top: 20%;
 }
 .circular-nav h2 span{
     color: #ffffff;
@@ -1625,7 +1689,7 @@ ul .active-tab:before{
 }
 
 .carousel-item .more,
-.carousel-item h2{
+.carousel-item .faide-this{
     opacity: 0;
     transition: all 1s linear;
 }
