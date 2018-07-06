@@ -43,15 +43,22 @@ $(document).ready(function() {
     });
 
     $('.js-sub-menu').on('click', function() {
-        $('#left-nav-bar').addClass('color-block');
-        $('.color-red').css('background', 'red');
-        $('.circular-block').addClass('color-red');
-        $('#sub-menu-block').addClass('open');
+        console.log();
+        // $('#left-nav-bar').addClass('color-block');
+        // $('.color-red').css('background', 'red');
+        // $('.circular-block').addClass('color-red');
+        $('#sub-menu-block')
+            .attr('class', 'img-menu ' + $(this).data('color'))
+            .addClass('open');
+
         $('#btn-toggle-vertical-menu').addClass('hide');
     });
 
     $('.js-sub-menu2').on('click', function() {
-        $('#sub-menu-block2').addClass('open');
+        $('#sub-menu-block2')
+            .attr('class', 'img-menu ' + $(this).data('color'))
+            .addClass('open');
+
         $('#btn-toggle-vertical-menu2').addClass('hide');
     });
 
