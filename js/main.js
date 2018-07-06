@@ -43,7 +43,10 @@ $(document).ready(function() {
     });
 
     $('.js-sub-menu').on('click', function() {
-        console.log();
+        $(this)
+            .addClass('current')
+            .siblings()
+            .removeClass('current');
         // $('#left-nav-bar').addClass('color-block');
         // $('.color-red').css('background', 'red');
         // $('.circular-block').addClass('color-red');
@@ -55,6 +58,11 @@ $(document).ready(function() {
     });
 
     $('.js-sub-menu2').on('click', function() {
+        $(this)
+            .addClass('current')
+            .siblings()
+            .removeClass('current');
+
         $('#sub-menu-block2')
             .attr('class', 'img-menu ' + $(this).data('color'))
             .addClass('open');
