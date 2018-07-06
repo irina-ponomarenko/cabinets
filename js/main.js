@@ -47,7 +47,7 @@ $(document).ready(function() {
             .addClass('current')
             .siblings()
             .removeClass('current');
-        // $('#left-nav-bar').addClass('color-block');
+        $('#left-nav-bar').addClass('color-block');
         // $('.color-red').css('background', 'red');
         // $('.circular-block').addClass('color-red');
         $('#sub-menu-block')
