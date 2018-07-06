@@ -316,9 +316,6 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 .color-block{
     background-color: #ffffff;
     height: 100vh;
-    -webkit-box-shadow: -1px 5px 28px 0px rgba(0,0,0,0.59);
-    -moz-box-shadow: -1px 5px 28px 0px rgba(0,0,0,0.59);
-    box-shadow: -1px 5px 28px 0px rgba(0,0,0,0.59);
     z-index: 200;
 }
 .circular-block{
@@ -328,7 +325,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     left: 0;
     right: 0;
     background: white;
-    width: 65%;
+    width: 300px;
     border-top-right-radius: 100%;
     border-bottom-right-radius: 100%;
 }
@@ -346,9 +343,6 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 .left-nav-bar.fixed-left-nav .nav-bar-left{
     background: #fff;
     height: 100vh;
-    -webkit-box-shadow: -1px 5px 28px 0px rgba(0,0,0,0.59);
-    -moz-box-shadow: -1px 5px 28px 0px rgba(0,0,0,0.59);
-    box-shadow: -1px 5px 28px 0px rgba(0,0,0,0.59);
     z-index: 200;
 }
 .left-nav-bar.hide .nav-bar-left{
@@ -1257,7 +1251,7 @@ ul .active-tab:before{
 .img-menu{
     position: absolute;
     top: 0;
-    left: 260px;
+    left: 299px;
     display: none;
     z-index: 150;
     overflow: hidden;
@@ -1297,7 +1291,7 @@ ul .active-tab:before{
 .circular-nav ul{
     left: 35px;
     position: absolute;
-    top: 29%;
+    top: 35%;
 }
 /*.red{*/
     /*background-color: #ff5c46;*/
@@ -1366,14 +1360,16 @@ ul .active-tab:before{
     font-size: 46px;
     font-weight: 500;
     position: absolute;
-    left: 31%;
+    left: 40%;
     display: flex;
     justify-content: space-evenly;
     width: 100%;;
     top: 20%;
+    white-space: nowrap;
 }
 .circular-nav h2 span{
     color: #ffffff;
+    margin-left: 15px;
 }
 .circular-nav ul li a{
     font-size: 19px;
