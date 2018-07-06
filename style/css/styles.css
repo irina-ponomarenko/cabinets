@@ -1299,8 +1299,32 @@ ul .active-tab:before{
     position: absolute;
     top: 29%;
 }
-.color-li-red{
-    background-color: red;
+.red{
+    background-color: #ff5c46;
+}
+.white{
+    background-color: #ffffff;
+}
+.green{
+    background-color: #acd373;
+}
+.orange{
+    background-color: #ff9231;
+}
+.blue{
+    background-color: #4b98c9;
+}
+.grey{
+    background-color: #bbbbbb;
+}
+.brown{
+    background-color: #977665;
+}
+.purple{
+    background-color: #766597;
+}
+.yellow{
+    background-color: #efd949;
 }
 .circular-nav h2{
     font-size: 46px;

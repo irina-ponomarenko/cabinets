@@ -44,7 +44,7 @@ $(document).ready(function() {
 
     $('.js-sub-menu').on('click', function() {
         console.log();
-        // $('#left-nav-bar').addClass('color-block');
+        $('#left-nav-bar').addClass('color-block');
         // $('.color-red').css('background', 'red');
         // $('.circular-block').addClass('color-red');
         $('#sub-menu-block')
