@@ -48,8 +48,6 @@ $(document).ready(function() {
             .siblings()
             .removeClass('current');
         $('#left-nav-bar').addClass('color-block');
-        // $('.color-red').css('background', 'red');
-        // $('.circular-block').addClass('color-red');
         $('#sub-menu-block')
             .attr('class', 'img-menu ' + $(this).data('color'))
             .addClass('open');
