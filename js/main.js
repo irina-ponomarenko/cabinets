@@ -71,6 +71,7 @@ $(document).ready(function() {
 
         if (scroll >= stickyOffset) {
             elSticky.addClass('fixed-header');
+            $('.header').css('margin-top', elSticky.outerHeight());
         }
         else if (scroll < stickyOffset) {
             elSticky.removeClass('fixed-header');
