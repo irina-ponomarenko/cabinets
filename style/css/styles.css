@@ -327,6 +327,10 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 .left-nav-bar.fixed-left-nav .nav-bar-left{
     background: #fff;
     height: 100vh;
+    -webkit-box-shadow: -1px 5px 28px 0px rgba(0,0,0,0.59);
+    -moz-box-shadow: -1px 5px 28px 0px rgba(0,0,0,0.59);
+    box-shadow: -1px 5px 28px 0px rgba(0,0,0,0.59);
+    z-index: 200;
 }
 .left-nav-bar.hide .nav-bar-left{
     z-index: 10;
@@ -977,7 +981,6 @@ ul .active-tab:before{
     height: auto;
     background-color: #acd373;
     padding: 40px 30px 40px 65px;
-    max-height: 530px;
     -webkit-box-shadow: 0px 2px 13px -1px rgba(153,134,117,1);
     -moz-box-shadow: 0px 2px 13px -1px rgba(153,134,117,1);
     box-shadow: 0px 2px 13px -1px rgba(153,134,117,1);
@@ -1236,6 +1239,7 @@ ul .active-tab:before{
 .circular-nav ul{
     left: 35px;
     position: absolute;
+    top: 20%;
 }
 .circular-nav h2{
     font-size: 46px;
