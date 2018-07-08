@@ -22,6 +22,7 @@ $(document).ready(function() {
         }
     });
 
+
     $('#toggle-menu-vertical').on('click', function() {
         let item = $('#left-bar-content');
         let check = item.hasClass('hidden');
@@ -47,7 +48,6 @@ $(document).ready(function() {
             .addClass('current')
             .siblings()
             .removeClass('current');
-        $('#left-nav-bar').addClass('color-block');
         $('#sub-menu-block')
             .attr('class', 'img-menu ' + $(this).data('color'))
             .addClass('open');

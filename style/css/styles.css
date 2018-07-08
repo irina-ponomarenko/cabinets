@@ -4,7 +4,9 @@
     font-weight: 500;
     font-style: normal;
 }
-
+*{
+    font-family: 'Museo Cyrl';
+}
 
 body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -85,9 +87,10 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     width: 100%;
     margin: 0 auto;
     overflow: hidden;
-    padding: 25px 40px 170px;
+    padding: 25px 40px 0;
     z-index: 20;
     padding-left: 0;
+    height: 100vh;
 }
 .wrapper-content-header{
 
@@ -138,7 +141,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     z-index: 100;
 }
 .wrapper-nav-center{
-    padding: 20px 0;
+    padding: 15px 0;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
@@ -284,8 +287,9 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 /*-------------content-header-------------*/
 .content-header{
     display: flex;
+    flex-direction: column;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 /*-------------left-nav-bar----------------*/
 
@@ -295,11 +299,16 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     z-index: 100;
     background-position: right;
     background-size: contain;
-    position: relative;
+    position: absolute;
+    top:258px;
+    bottom: 0;
+    max-width: 300px;
+    transition: .4s;
+    margin-top: 10px;
 }
 .left-nav-bar.fixed-left-nav{
     position: fixed;
-    top: 83px;
+    top: 62px;
     bottom: 0;
     z-index: 10;
 }
@@ -309,17 +318,13 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 .left-nav-bar.fixed-left-nav .sale{
     display: none;
 }
-.wrap-hide-menu{
-    transition: .4s;
-    /*height: 100vh;*/
-}
 .color-block{
     background-color: #ffffff;
     height: 100vh;
     z-index: 200;
 }
 .circular-block{
-    position: absolute;
+    height: 100%;
     top: -18px;
     bottom: -18px;
     left: 0;
@@ -329,16 +334,8 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     border-top-right-radius: 100%;
     border-bottom-right-radius: 100%;
 }
-.left-nav-bar.hide .wrap-hide-menu{
-    margin-left: -271px;
-}
-.left-nav-bar.hide .menu-overflow{
-    overflow: hidden;
-}
-.nav-bar-left{
-    position: sticky;
-    top: 100px;
-    width: 300px;
+.left-nav-bar.hide{
+    margin-left: -300px;
 }
 .left-nav-bar.fixed-left-nav .nav-bar-left{
     background: #fff;
@@ -348,23 +345,23 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 .left-nav-bar.hide .nav-bar-left{
     z-index: 10;
 }
-.left-nav-bar.hide .menu-overflow:after{
-    content: '';
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    width: 40px;
-    background: #ccc;
-    z-index: 10;
-}
+/*.left-nav-bar.hide .menu-overflow:after{*/
+    /*content: '';*/
+    /*display: block;*/
+    /*position: absolute;*/
+    /*right: 0;*/
+    /*top: 0;*/
+    /*bottom: 0;*/
+    /*width: 40px;*/
+    /*background: #ccc;*/
+    /*z-index: 10;*/
+/*}*/
 .left-nav-bar.hide .chevron-left{
     /*right: 10px;*/
 }
 .nav-bar-left li{
-    padding: 25px 0;
-    font-size: 21px;
+    padding: 15px 0;
+    font-size: 15px;
     text-decoration: none;
     color: #333333;
     cursor: pointer;
@@ -373,11 +370,6 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     justify-content: space-between;
     padding-right: 15px;
     padding-left: 25px;
-}
-.nav-bar-left li:hover{
-   border-bottom: 1px solid lightgrey;
-    border-top: 1px solid lightgrey;
-
 }
 .icon-none{
     background-image: none;
@@ -394,9 +386,6 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 }
 .sale{
     padding: 25px 0;
-}
-.sale a{
-    padding-left: 25px;
 }
 .sale a:hover h2{
     color: #df2323;
@@ -463,9 +452,10 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     -moz-box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.25);
     box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.25);
     position: absolute;
-    right: -32px;
+    right: -30px;
     top: 50%;
     z-index: 1000000;
+    transition: .4s;
 }
 .chevron-left-btn:focus,
 .chevron-right:focus{
@@ -473,15 +463,18 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 }
 .chevron-left-btn.align-right{
     text-align: right;
+    right: -96px;
 }
 .chevron-left-btn i{
-    font-size: 47px;
-    margin-right: 11px;
+    font-size: 44px;
     color: #848484;
-    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
 }
 .chevron-right i{
-    font-size: 47px;
+    font-size: 44px;
     color: #848484;
     margin-bottom: 5px;
 }
@@ -647,6 +640,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     left: 340px;
     right: 40px;
     display: flex;
+    justify-content: flex-end;
     align-items: center;
     text-align: right;
 }
@@ -662,11 +656,12 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 }
 .title-item{
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 54%;
+    transform: translateX(-54%);
     display: inline-block;
     text-align: center;
     z-index: 100;
+    top: 0;
 }
 .title-item h3{
     font-weight: 100;
@@ -909,6 +904,7 @@ ul .active-tab:before{
     margin-top: -15px;
     width: 50px;
     height: 50px;
+    font-size: 30px;
     text-align: center;
     background: #efefef;
     color: #373737;
@@ -1020,7 +1016,7 @@ ul .active-tab:before{
     font-size: 33px;
     font-weight: 700;
     color: #ef7860;
-    margin-top: 30px;
+    margin-top: 20px;
     margin-bottom: 40px;
 }
 .banner-content-right{
@@ -1250,8 +1246,10 @@ ul .active-tab:before{
 }
 .img-menu{
     position: absolute;
+    width: 415px;
     top: 0;
-    left: 299px;
+    bottom: 0;
+    left: 263px;
     display: none;
     z-index: 150;
     overflow: hidden;
@@ -1265,8 +1263,8 @@ ul .active-tab:before{
 }
 .img-menu .close-btn{
     position: absolute;
-    right: 30px;
     top: 20px;
+    left: 25px;
     z-index: 10;
     font-size: 35px;
     cursor: pointer;
@@ -1283,6 +1281,7 @@ ul .active-tab:before{
     align-items: center;
     justify-content: flex-end;
     position: absolute;
+    height: 100vh;
     top:0;
     left: 0;
     right: 0;
@@ -1291,80 +1290,62 @@ ul .active-tab:before{
 .circular-nav ul{
     left: 35px;
     position: absolute;
-    top: 35%;
+    top: 130px;
 }
-/*.red{*/
-    /*background-color: #ff5c46;*/
-/*}*/
-/*.white{*/
-    /*background-color: #ffffff;*/
-/*}*/
-/*.green{*/
-    /*background-color: #acd373;*/
-/*}*/
-/*.orange{*/
-    /*background-color: #ff9231;*/
-/*}*/
-/*.blue{*/
-    /*background-color: #4b98c9;*/
-/*}*/
-/*.grey{*/
-    /*background-color: #bbbbbb;*/
-/*}*/
-/*.brown{*/
-    /*background-color: #977665;*/
-/*}*/
-/*.purple{*/
-    /*background-color: #766597;*/
-/*}*/
-/*.yellow{*/
-    /*background-color: #efd949;*/
-/*}*/
 .red.current,
 .img-menu.red .circular-block{
     background-color: #ff5c46;
+    transition: .3s;
 }
 .white.current,
 .img-menu.white .circular-block{
     background-color: #ffffff;
+    transition: .3s;
 }
 .green.current,
 .img-menu.green .circular-block{
     background-color: #acd373;
+    transition: .3s;
 }
 .orange.current,
 .img-menu.orange .circular-block{
     background-color: #ff9231;
+    transition: .3s;
 }
 .blue.current,
 .img-menu.blue .circular-block{
     background-color: #4b98c9;
+    transition: .3s;
 }
 .grey.current,
 .img-menu.grey .circular-block{
     background-color: #bbbbbb;
+    transition: .3s;
 }
 .brown.current,
 .img-menu.brown .circular-block{
     background-color: #977665;
+    transition: .3s;
 }
 .purple.current,
 .img-menu.purple .circular-block{
     background-color: #766597;
+    transition: .3s;
 }
 .yellow.current,
 .img-menu.yellow .circular-block{
     background-color: #efd949;
+    transition: .3s;
 }
 .circular-nav h2{
     font-size: 46px;
     font-weight: 500;
     position: absolute;
-    left: 40%;
+    left: 52px;
     display: flex;
     justify-content: space-evenly;
     width: 100%;;
-    top: 20%;
+    top: 70px;
     white-space: nowrap;
 }
 .circular-nav h2 span{
@@ -1372,10 +1353,10 @@ ul .active-tab:before{
     margin-left: 15px;
 }
 .circular-nav ul li a{
-    font-size: 19px;
+    font-size: 15px;
 }
 .circular-nav ul li{
-    padding: 18px 0;
+    padding: 15px 0;
 }
 .hidden-menu-block{
     width: 55px;
@@ -1423,7 +1404,7 @@ ul .active-tab:before{
     align-self: flex-end;
 }
 .info-slider img{
-    max-width: 475px;
+    max-width: 400px;
     width: 100%;
 }
 .more{
@@ -1447,13 +1428,10 @@ ul .active-tab:before{
 .more:focus{
     outline: none;
 }
-.slide-card{
-    margin-bottom: 30px;
-}
 .slide-card h3{
     font-size: 25px;
     font-weight: 700;
-    margin-top: 30px;
+    margin-top: 15px;
 }
 .carousel-control-prev-icon,
 .carousel-control-next-icon{
@@ -1721,10 +1699,13 @@ ul .active-tab:before{
 .header-sticky {
     position: relative;
     z-index: 100;
-    transition: .4s;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 .header-sticky.fixed-header {
     position: fixed;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
     top: 0;
     left: 0;
     right: 0;
@@ -1733,15 +1714,23 @@ ul .active-tab:before{
 }
 .fixed-header  .wrapper-nav-center{
     padding-right: 25px;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 .header-sticky.fixed-header .logo{
     display: none;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 .header-sticky.fixed-header .sale-none-js{
     display: flex;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 .header-sticky.fixed-header .sale-none{
     display: none;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
 .carousel-item .more,
@@ -1754,16 +1743,6 @@ ul .active-tab:before{
 .carousel-item.active h2{
     opacity: 1;
 }
-
-
-
-
-
-
-
-
-
-
 
 .content-slider .carousel-inner {
     height: 100%;
@@ -1780,7 +1759,7 @@ ul .active-tab:before{
 
 .slide-main-img {
     width: 100%;
-    max-width: 70%;
+    max-width: 60%;
     vertical-align: middle;
     transform: translateX(60px);
 }
